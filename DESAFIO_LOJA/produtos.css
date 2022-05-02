@@ -61,7 +61,7 @@ nav ul li a{
 nav ul li a:hover {
     text-shadow: 1px 1px 1px #c600ff;
     transition: 0.3s;
-  }
+}
   
 nav ul li a:after {
     content: '';
@@ -117,31 +117,42 @@ main h1{
     justify-content: center;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 15px;
 }
 
-#div-container{
-    display: flex;
+#container{
+    display: grid;
+}
+
+.card-col{
     flex-wrap: wrap;
-    width: 100%;
-    margin: 2em 0em;
-
+    margin: 5px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s;
 }
 
-.div-shadow {
-    width: 5em;
-    height: 2em;
-    margin: 0 1em 1em 0;
-    transition: all 100ms ease-in-out;
+.card-col:hover{
+    transform: translateY(-7px);
 }
 
-.div-shadow:nth-child(odd) {
-    box-shadow: 0px 0px 10px var(--clr-gray-med);
+.card-col h5{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    z-index: 2;
 }
-  
-.div-shadow:nth-child(even) {
-    box-shadow: inset 0px 0px 10px var(--clr-gray-med);
+
+.card-col p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 10px;
 }
-  
-.div-shadow:hover {
-    transform: scale(1.2);
+
+.card-col img{
 }
+

@@ -10,7 +10,15 @@ function guardar(){
 
   }
 
-  window.localStorage.setItem("Produtos", JSON.stringify(myObjt));
-  localStorage.setItem(Produtos);
+  var valores = localStorage.getItem("Produtos"); // pega os valores como string no localstorage
+  valores = JSON.parse(valores); // converte a string em array
+
+  if (!valores){
+    valores = [ ]
+  }
+
+  valores.push(myObjt);
+  localStorage.setItem("Produtos", JSON.stringify(valores));
 }
+
 

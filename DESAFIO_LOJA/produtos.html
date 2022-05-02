@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TS - Produtos</title>
     <link rel="stylesheet" href="produtos.css">
+
     
 </head>
 <body>
@@ -20,6 +21,9 @@
                      <a href="inicial.html">Inicio</a>
                  </li>
                  <li>
+                    <a href="cadastrar.html">Cadastrar</a>
+                </li>
+                 <li>
                      <a href="produtos.html">Produtos</a>
                  </li>
              </ul>
@@ -28,12 +32,15 @@
     </nav>
 
     <div class="buto">
-        <button class="btnATT" onclick="AddNew()">Atualizar Produtos</button>
+        <button class="btnATT" onclick="mostraValores()">Atualizar Produtos</button>
     </div>
 
     <main>
         <h1>Produtos Registrados</h1>
-        <div id="div-container"></div>
+        <div id="container">
+            <div id="grid"></div>
+        </div>
+
     </main>
 
 </body>
