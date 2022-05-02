@@ -1,7 +1,3 @@
-const btnADD = document.querySelector(".btnATT");
-const divContainer = document.getElementById("div-container");
-
-btnADD.addEventListener("click", AddNew);
 
 function mostraValores() {
     var valores = localStorage.getItem("Produtos"); // pega os valores como string no localstorage
